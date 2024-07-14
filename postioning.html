@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .b1,
+        .b2,
+        .b3,
+        .b4{
+            display: inline-block; /* or use display: block; */
+            height: 50px;
+            width: 50px;
+        }
+
+        .b1{
+            background-color: aquamarine;
+            position: relative;
+            top: 10px;
+        }
+        .b2{
+            background-color: aqua;
+            position: absolute;
+            top: 25px;
+        }
+        .b3{
+            /* you can do the sticky thing that allows you to have a kind of fixed block that is
+            fixed until a particular container in which it already is in */
+            background-color: black;
+            position: sticky;
+            top: 10px;
+        }
+        .b4{
+            background-color: yellow;
+            position: fixed;
+            margin: 10px;
+            /* top: 100px; */
+        }
+        .dic{
+            height: 800px;
+            width: 200px;
+            background-color: aqua;
+        }
+        .dim{
+            height: 1000px;
+            width: 100%;
+
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="dim">
+        <span class="b1"></span>
+        <!-- <span class="b2"></span> -->
+        <span class="b3"></span>
+        <span class="b4"></span>
+        <!-- <div class="dic">
+
+        </div> -->
+        
+    </div>
+    <div class="dim" style="padding: 10px; border: 10px; top: 10px; background-color: green;">
+
+    </div>
+    
+</body>
+</html>

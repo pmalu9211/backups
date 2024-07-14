@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Noto+Sans&display=swap");
+
+      body {
+        background: rgb(19, 19, 19);
+        color: #fff;
+        font-family: "Noto Sans", sans-serif;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #353535;
+        font-size: 3rem;
+        color: #fff;
+        box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem,
+          rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+        height: 100%;
+        width: 100%;
+        border-radius: 4px;
+        transition: all 500ms;
+        overflow: hidden;
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .card:hover {
+        box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em,
+          rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+        transform: translateY(-3px) scale(1.1);
+      }
+      .grid{
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(50px,1fr));
+        grid-template-columns: repeat(auto-fit, minmax(100px,1fr));/*automatically makes more coloumn*/
+        /* grid-template-rows: repeat(4, minmax(100px,100px)); */
+        grid-auto-rows: 100px;
+
+      }
+      @media screen and (min-width: 300px) {
+        .big{
+        grid-row: span 2/auto;
+        grid-column: span 2/auto ;
+      }
+        
+      }
+
+
+
+    </style>
+  </head>
+
+  <body>
+    <section class="grid">
+        <div class="card big">1</div>
+        <div class="card big">2</div>
+        <div class="card">3</div>
+        <div class="card">4</div>
+        <div class="card">5</div>
+        <div class="card">6</div>
+        <div class="card big">7</div>
+        <div class="card">8</div>
+        <div class="card">9</div>
+        <div class="card">10</div>
+        <div class="card">11</div>
+        <div class="card">12</div>
+    </section>
+  </body>
+</html>

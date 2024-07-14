@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .container {
+        position: relative;
+        width: 70vw; /* Set the width of your container */
+        margin: auto;
+      }
+      img {
+        width: 70vw;
+      }
+
+      .video {
+        position: absolute;
+        z-index: -1;
+        top: 13.5%;
+        left: 10%;
+        width: 77%;
+        height: 67%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
+        alt="Background Image"
+      />
+      <div>
+        <video class="video" autoplay loop muted>
+          <source src="video1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </body>
+</html>

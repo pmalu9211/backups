@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Example</title>
+  <style>
+    #example{
+        background-color: red;
+        color: aquamarine;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="example">Hello, DOM!</h1>
+
+  <script>
+    // Accessing the element with id "example" using the DOM
+    var myElement = document.getElementById("example");
+
+    // Modifying the content of the element
+    myElement.innerHTML = "Hello, Updated DOM!";
+  </script>
+</body>
+</html>

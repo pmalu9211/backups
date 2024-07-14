@@ -1,0 +1,25 @@
+p {
+    color: orange;
+}
+
+#love {
+    font: bold;
+    color:rgba(255, 85, 0, 0.861);
+}
+
+/* if two or more class have the same name but you need to access only one then you can */
+
+.same_class {
+    color: rgb(112, 25, 92);
+    font: italic;
+}
+
+/* p[class = "same_Class"]{
+    color: blueviolet;
+    font: bolder;
+}
+li[class = "same_Class"]{
+    color: blueviolet;
+    font: bolder;
+} */
+

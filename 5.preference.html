@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <style>
+            /*
+            different types of selector have different priference in css for 
+            style
+            The more detail the tag is the better
+
+            importance order
+            ID = #
+            Class = .
+            TAG = p li div etc;
+            */
+            #para{
+                color: blue;
+
+            }
+            .para{
+                color: yellow;
+            }
+            p #para{
+                color: greenyellow;
+            }
+
+            p .para{
+                color: black;
+            }
+
+            /*
+            The more the better and everything in css is overwritten by inline html style
+            */
+            /*
+            And the important in css overwrites everything else*/
+            #para{
+                color: blueviolet !important;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <p style="color: black; padding: 10px; border: 10px;" id = "para" class="para">
+            Lund ka baal
+        </p>
+    </body>
+</html>
